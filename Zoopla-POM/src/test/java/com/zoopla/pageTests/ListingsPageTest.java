@@ -39,10 +39,7 @@ public class ListingsPageTest extends TestBase {
 //	public void  getListings() {
 //		ListingsPageObj.getAllListings();
 //	}
-	@Test(priority =4)
-	public void GetDeatilsOfSelectedProperty() {
-		System.out.println("Details are :  "+ListingsPageObj.textOfFifthProperty());
-	}
+	
 	@Test(priority =5)
 	public void clickOnProperty() {
 		ListingsPageObj.clickOnFifthListing();

@@ -15,7 +15,7 @@ public class PropertyDetailsPageTest extends TestBase
 	PropertyDetailsPage  PropertyPageObj;
 	ListingPage Listingpageobj;
 	HomePage HomePageObj;
-	
+	String SelectedPropertyAddress = Listingpageobj.AddressOfTheFifthProperty(); 
 	@BeforeClass
 	public void Initialize() 
 	{
@@ -33,11 +33,12 @@ public class PropertyDetailsPageTest extends TestBase
 		 String expectedUrl = "https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12";
 		 Assert.assertEquals(actualUrl,expectedUrl,"URL not matched");
 		 }
-//	 @Test(priority=2)
-//	 public void validateAgentName() {
-//		String actualAgentname = PropertyPageObj.validateAgentName();
-//		String expectedAgentname =
-//	 }
+	 @Test(priority=2)
+	 public void validateAgentAddress() {
+		String actualaddress = PropertyPageObj.validatePropertyAddress();
+		String expectedAddress = SelectedPropertyAddress;
+		Assert.assertEquals(actualaddress,expectedAddress);
+	 }
 	 
 	 @Test(priority=2)
 	 public void ClickOnViewProperty() {

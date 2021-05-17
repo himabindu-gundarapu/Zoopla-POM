@@ -20,6 +20,8 @@ public class ListingPage extends TestBase {
 	WebElement mostRecentDropdown;
 	@FindBy(xpath ="//div[@class='css-wfndrn-StyledContent e2uk8e18']")
 	List<WebElement> listings;
+	@FindBy(xpath ="//a[@class='e2uk8e4 css-15tydk8-StyledLink-Link-FullCardLink e33dvwd0']//p")
+	List<WebElement> PropertyAddress;
 	// Initializing the page objects
 	public ListingPage(WebDriver driver) {
 		
@@ -42,9 +44,11 @@ public class ListingPage extends TestBase {
 		CommonUtils.ClickButton(fifthListing,"FifthListing");
 		return new PropertyDetailsPage(driver);
 	}
-	public String textOfFifthProperty() {
-		System.out.println("Fifthproperty details :" +listings.get(4).getText());
-		return listings.get(4).getText();
+	//Store adress of selected property in a string variable
+	public String AddressOfTheFifthProperty() {
+		String address = PropertyAddress.get(4).getText();
+		System.out.println("5th property address :  "+address);
+		return address;
 	}
 	//to validate Listing page title
 	public String validateListingPageTitle() {
