@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.zoopla.TestBase;
 import com.zoopla.pages.HomePage;
 import com.zoopla.pages.ListingPage;
@@ -20,6 +21,7 @@ public class ListingsPageTest extends TestBase {
 	public void Initialize() 
 	{
 		TestBase.setUp();
+		logger = report.startTest("ListingPageTestCase");
 		HomePageObj = new HomePage(driver);
 		HomePageObj.EntercityTextBox("London");
 		ListingsPageObj = HomePageObj.ClicksearchButton();
@@ -29,7 +31,9 @@ public class ListingsPageTest extends TestBase {
 	public void validateTitle() {
 		String actualtitle =ListingsPageObj.validateListingPageTitle();
 		String expectedTitle = "Property for Sale in London - Buy Properties in London - Zoopla";
+		logger.log(LogStatus.INFO, "actual title of Listing page is"+actualtitle);
 		Assert.assertEquals(actualtitle,expectedTitle,"listingpage title not matched");
+		logger.log(LogStatus.INFO,"varified title");
 	}
 	@Test(priority=2)
 	public void MostRecentDrpDwn() {

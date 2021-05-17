@@ -8,11 +8,99 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,881</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">ZooplaTest</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">86,183</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.zoopla.Example</td><td><a href="#m0">homapageTest</a></td><td rowspan="1">1621220065441</td><td rowspan="1">7115</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ZooplaTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.zoopla.pageTests.AgentPageTest</td><td><a href="#m0">validateAgentName</a></td><td rowspan="1">1621225512639</td><td rowspan="1">33</td></tr><tr class="failedeven"><td><a href="#m1">validateAllListing</a></td><td rowspan="1">1621225512674</td><td rowspan="1">1630</td></tr><tr class="failedodd"><td rowspan="2">com.zoopla.pageTests.PropertyDetailsPageTest</td><td><a href="#m2">ValidatepageTitle</a></td><td rowspan="1">1621225459718</td><td rowspan="1">17</td></tr><tr class="failedodd"><td><a href="#m3">validateAgentAddress</a></td><td rowspan="1">1621225461983</td><td rowspan="1">40058</td></tr><tr><th colspan="4">ZooplaTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.zoopla.pageTests.HomepageTest</td><td><a href="#m4">EnterText</a></td><td rowspan="1">1621225435090</td><td rowspan="1">275</td></tr><tr class="passedeven"><td><a href="#m5">clickOnsearchBtn</a></td><td rowspan="1">1621225435367</td><td rowspan="1">3434</td></tr><tr class="passedeven"><td><a href="#m6">validateHomepageTitle</a></td><td rowspan="1">1621225435071</td><td rowspan="1">15</td></tr><tr class="passedodd"><td rowspan="3">com.zoopla.pageTests.ListingsPageTest</td><td><a href="#m7">MostRecentDrpDwn</a></td><td rowspan="1">1621225445917</td><td rowspan="1">1860</td></tr><tr class="passedodd"><td><a href="#m8">clickOnProperty</a></td><td rowspan="1">1621225447779</td><td rowspan="1">3141</td></tr><tr class="passedodd"><td><a href="#m9">validateTitle</a></td><td rowspan="1">1621225445878</td><td rowspan="1">37</td></tr><tr class="passedeven"><td rowspan="1">com.zoopla.pageTests.PropertyDetailsPageTest</td><td><a href="#m10">ClickOnViewProperty</a></td><td rowspan="1">1621225459737</td><td rowspan="1">2244</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.zoopla.Example#homapageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ZooplaTest</h2><h3 id="m0">com.zoopla.pageTests.AgentPageTest#validateAgentName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.OL3nf9}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52196}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
+*** Element info: {Using=css selector, value=body.layout-standard.brand-zoopla:nth-child(2) div.main-content-area.clearfix.wrap:nth-child(9) div.clearfix:nth-child(2) div.layout-standard:nth-child(1) div.clearfix:nth-child(1) div:nth-child(1) h1:nth-child(1) &gt; a:nth-child(1))}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.zoopla.pages.AgentPage.validateAgentName(AgentPage.java:27)
+	at com.zoopla.pageTests.AgentPageTest.validateAgentName(AgentPageTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.zoopla.pageTests.AgentPageTest#validateAllListing</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.OL3nf9}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52196}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
+*** Element info: {Using=css selector, value=body.layout-standard.brand-zoopla:nth-child(2) div.main-content-area.clearfix.wrap:nth-child(9) div.clearfix:nth-child(2) div.layout-standard:nth-child(1) div.clearfix:nth-child(1) div:nth-child(1) h1:nth-child(1) &gt; a:nth-child(1))}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.zoopla.pages.AgentPage.validateAgentName(AgentPage.java:27)
+	at com.zoopla.pageTests.AgentPageTest.validateAllListing(AgentPageTest.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.zoopla.pageTests.PropertyDetailsPageTest#ValidatepageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: URL not matched expected [https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12] but found [https://www.zoopla.co.uk/new-homes/details/57648662/?search_identifier=745775bfdf5a80480dca54c310e41cd5]
+	at com.zoopla.pageTests.PropertyDetailsPageTest.ValidatepageTitle(PropertyDetailsPageTest.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.zoopla.pageTests.PropertyDetailsPageTest#validateAgentAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class =&apos;css-1nc2nta-BodyContainer evrk8bx7&apos;]//h1//span[2]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.35wbDx}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52062}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: f92ab9bb3bc0ae242a7f4f90e1b95001
+*** Element info: {Using=xpath, value=//div[@class =&apos;css-1nc2nta-BodyContainer evrk8bx7&apos;]//h1//span[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.zoopla.pages.PropertyDetailsPage.validatePropertyAddress(PropertyDetailsPage.java:37)
+	at com.zoopla.pageTests.PropertyDetailsPageTest.validateAgentAddress(PropertyDetailsPageTest.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.zoopla.pageTests.HomepageTest#EnterText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.zoopla.pageTests.HomepageTest#clickOnsearchBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.zoopla.pageTests.HomepageTest#validateHomepageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.zoopla.pageTests.ListingsPageTest#MostRecentDrpDwn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.zoopla.pageTests.ListingsPageTest#clickOnProperty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.zoopla.pageTests.ListingsPageTest#validateTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.zoopla.pageTests.PropertyDetailsPageTest#ClickOnViewProperty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

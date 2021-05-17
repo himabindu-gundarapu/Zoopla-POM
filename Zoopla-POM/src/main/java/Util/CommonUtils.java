@@ -18,9 +18,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CommonUtils {
 	
-		static WebDriver driver;
-		static ExtentTest logger;
-		static ExtentReports report;
+		public static WebDriver driver;
+		public  ExtentTest logger;
+		public static  ExtentReports report;
 		
 		public static void InitializeDriver() 
 		{

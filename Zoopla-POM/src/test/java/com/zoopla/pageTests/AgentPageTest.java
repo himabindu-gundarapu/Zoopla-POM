@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.zoopla.TestBase;
 import com.zoopla.pages.AgentPage;
 import com.zoopla.pages.HomePage;
@@ -23,6 +24,7 @@ public class AgentPageTest extends TestBase {
 	@BeforeClass
 	public void initialize() {
 		TestBase.setUp();
+		logger = report.startTest("AgentPageTestCase");
 		HomePageObj = new  HomePage(driver);
 		HomePageObj.EntercityTextBox("London");
 		ListingPageObj = HomePageObj.ClicksearchButton();
@@ -34,9 +36,12 @@ public class AgentPageTest extends TestBase {
 	public void validateAgentName() {
 		String actual =  AgentPageObj.validateAgentName();
 		String expected = PropertyPageObj.validateAgentName();
+		logger.log(LogStatus.INFO,"actual agentName on Property" +actual);
 		System.out.println("Agentname on property deatils page :" +expected);
+		logger.log(LogStatus.INFO,"Expected agentName on Property" +expected);
 		System.out.println("Agentname on Agent deatils page :" +actual);
 		Assert.assertEquals(actual, expected);
+		logger.log(LogStatus.PASS,"Agent testcase passed");
 		}
 	
 	//Validating all listings which are displayed on agent page with agent name
@@ -47,6 +52,7 @@ public class AgentPageTest extends TestBase {
 		for(String s: AllListings) {
 			System.out.println("Listings :  "+s);
 			 Assert.assertTrue(s.contains(agentName),"agentname not found");
+			 logger.log(LogStatus.INFO,"AgenentName matched" +s );
 			}
 		
 	}

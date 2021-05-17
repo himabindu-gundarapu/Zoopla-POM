@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.zoopla.TestBase;
 import com.zoopla.pages.AgentPage;
 import com.zoopla.pages.HomePage;
@@ -24,6 +25,7 @@ public class HomepageTest extends TestBase
 	@BeforeClass
 	public void Initialize() {
 		TestBase.setUp();
+		logger = report.startTest("HomePageTestCase");
 		HomepageObj = new HomePage(driver);
 		
 //		HomepageObj.preferencesClick();
@@ -42,6 +44,7 @@ public class HomepageTest extends TestBase
 		
 		String actualtitle = HomepageObj.verifyHomePageTitle();
 		System.out.println("actual homepage title :  "+actualtitle);
+		logger.log(LogStatus.INFO,"HomePageTitle" +actualtitle );
 		String ExpectedTitle ="Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents";
 		Assert.assertEquals(actualtitle,ExpectedTitle,"Fail");
 	}
