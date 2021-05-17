@@ -15,7 +15,7 @@ public class PropertyDetailsPageTest extends TestBase
 	PropertyDetailsPage  PropertyPageObj;
 	ListingPage Listingpageobj;
 	HomePage HomePageObj;
-	String SelectedPropertyAddress = Listingpageobj.AddressOfTheFifthProperty(); 
+	String SelectedPropertyAddress;// = Listingpageobj.AddressOfTheFifthProperty(); 
 	@BeforeClass
 	public void Initialize() 
 	{
@@ -23,6 +23,7 @@ public class PropertyDetailsPageTest extends TestBase
 		HomePageObj = new HomePage(driver); 
 		HomePageObj.EntercityTextBox("London");
 		Listingpageobj = HomePageObj.ClicksearchButton();
+		SelectedPropertyAddress = Listingpageobj.AddressOfTheFifthProperty();
 		PropertyPageObj = Listingpageobj.clickOnFifthListing();
 	}
 	
