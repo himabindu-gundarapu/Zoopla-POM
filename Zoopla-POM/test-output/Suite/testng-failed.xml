@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ZooplaTest(failed)">
+    <classes>
+      <class name="com.zoopla.pageTests.PropertyDetailsPageTest">
+        <methods>
+          <include name="Initialize"/>
+          <include name="tearDown"/>
+          <include name="ValidatepageTitle"/>
+          <include name="ClickOnViewProperty"/>
+        </methods>
+      </class> <!-- com.zoopla.pageTests.PropertyDetailsPageTest -->
+      <class name="com.zoopla.pageTests.AgentPageTest">
+        <methods>
+          <include name="validateAllListing"/>
+          <include name="tearDown"/>
+          <include name="validateAgentName"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.zoopla.pageTests.AgentPageTest -->
+    </classes>
+  </test> <!-- ZooplaTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
