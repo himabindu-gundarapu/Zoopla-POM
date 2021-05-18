@@ -23,7 +23,7 @@ public class AgentPageTest extends TestBase {
 	
 	@BeforeClass
 	public void initialize() {
-		TestBase.setUp();
+		TestBase.setUp(); 
 		logger = report.startTest("AgentPageTestCase");
 		HomePageObj = new  HomePage(driver);
 		HomePageObj.EntercityTextBox("London");
