@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,  2 skipped,  6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,6 +104,11 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.PropertyDetailsPageTest" hash-for-method="ClickOnViewProperty">ClickOnViewProperty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.PropertyDetailsPageTest" hash-for-method="ValidatepageTitle">ValidatepageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -112,17 +117,26 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.PropertyDetailsPageTest" hash-for-method="validateAgentAddress">validateAgentAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.AgentPageTest" hash-for-method="validateAgentName">validateAgentName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.AgentPageTest" hash-for-method="validateAllListing">validateAllListing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,11 +145,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.PropertyDetailsPageTest" hash-for-method="ClickOnViewProperty">ClickOnViewProperty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zoopla.pageTests.HomepageTest" hash-for-method="EnterText">EnterText</a> <!-- method navigator-link -->
@@ -186,10 +195,45 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="ClickOnViewProperty">
+                  </a> <!-- ClickOnViewProperty -->
+                  <span class="method-name">ClickOnViewProperty</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;View agent properties&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.79Nmz0}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60779}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 44f89925d091848c2bccce78b1fe9f22
+*** Element info: {Using=link text, value=View agent properties}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at Util.CommonUtils.ClickButton(CommonUtils.java:67)
+	at com.zoopla.pages.PropertyDetailsPage.clickOnAgentname(PropertyDetailsPage.java:40)
+	at com.zoopla.pageTests.PropertyDetailsPageTest.ClickOnViewProperty(PropertyDetailsPageTest.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="ValidatepageTitle">
                   </a> <!-- ValidatepageTitle -->
                   <span class="method-name">ValidatepageTitle</span>
-                  <div class="stack-trace">java.lang.AssertionError: URL not matched expected [https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12] but found [https://www.zoopla.co.uk/new-homes/details/57648662/?search_identifier=745775bfdf5a80480dca54c310e41cd5]
+                  <div class="stack-trace">java.lang.AssertionError: URL not matched expected [https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12] but found [https://www.zoopla.co.uk/for-sale/property/london/?q=London&amp;results_sort=newest_listings&amp;search_source=home]
 	at com.zoopla.pageTests.PropertyDetailsPageTest.ValidatepageTitle(PropertyDetailsPageTest.java:38)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 32 stack frames
@@ -207,8 +251,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.35wbDx}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52062}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f92ab9bb3bc0ae242a7f4f90e1b95001
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.79Nmz0}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60779}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 44f89925d091848c2bccce78b1fe9f22
 *** Element info: {Using=xpath, value=//div[@class =&apos;css-1nc2nta-BodyContainer evrk8bx7&apos;]//h1//span[2]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
@@ -232,9 +276,9 @@ Session ID: f92ab9bb3bc0ae242a7f4f90e1b95001
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.zoopla.pageTests.AgentPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -243,15 +287,15 @@ Session ID: f92ab9bb3bc0ae242a7f4f90e1b95001
                   <a name="validateAgentName">
                   </a> <!-- validateAgentName -->
                   <span class="method-name">validateAgentName</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;View agent properties&quot;}
   (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.OL3nf9}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52196}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
-*** Element info: {Using=css selector, value=body.layout-standard.brand-zoopla:nth-child(2) div.main-content-area.clearfix.wrap:nth-child(9) div.clearfix:nth-child(2) div.layout-standard:nth-child(1) div.clearfix:nth-child(1) div:nth-child(1) h1:nth-child(1) &gt; a:nth-child(1))}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.W7MDp6}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60904}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: a575c6f7e13a24c90f944a840e6a0719
+*** Element info: {Using=link text, value=View agent properties}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
@@ -259,16 +303,17 @@ Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.getText(Unknown Source)
-	at com.zoopla.pages.AgentPage.validateAgentName(AgentPage.java:27)
-	at com.zoopla.pageTests.AgentPageTest.validateAgentName(AgentPageTest.java:37)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at Util.CommonUtils.ClickButton(CommonUtils.java:67)
+	at com.zoopla.pages.PropertyDetailsPage.clickOnAgentname(PropertyDetailsPage.java:40)
+	at com.zoopla.pageTests.AgentPageTest.initialize(AgentPageTest.java:32)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -277,15 +322,15 @@ Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
                   <a name="validateAllListing">
                   </a> <!-- validateAllListing -->
                   <span class="method-name">validateAllListing</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;View agent properties&quot;}
   (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;Sayannas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:147f:8a2f:99d4:20fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.OL3nf9}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52196}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
-*** Element info: {Using=css selector, value=body.layout-standard.brand-zoopla:nth-child(2) div.main-content-area.clearfix.wrap:nth-child(9) div.clearfix:nth-child(2) div.layout-standard:nth-child(1) div.clearfix:nth-child(1) div:nth-child(1) h1:nth-child(1) &gt; a:nth-child(1))}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=/var/folders/vv/75gx1wz504x119pqr9wykq380000gn/T/.com.google.Chrome.W7MDp6}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60904}, acceptInsecureCerts=false, browserVersion=90.0.4430.212, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: a575c6f7e13a24c90f944a840e6a0719
+*** Element info: {Using=link text, value=View agent properties}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
@@ -293,36 +338,22 @@ Session ID: d47ed5c66c3dcdd4d01bef7d4bff77aa
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.getText(Unknown Source)
-	at com.zoopla.pages.AgentPage.validateAgentName(AgentPage.java:27)
-	at com.zoopla.pageTests.AgentPageTest.validateAllListing(AgentPageTest.java:51)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at Util.CommonUtils.ClickButton(CommonUtils.java:67)
+	at com.zoopla.pages.PropertyDetailsPage.clickOnAgentname(PropertyDetailsPage.java:40)
+	at com.zoopla.pageTests.AgentPageTest.initialize(AgentPageTest.java:32)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zoopla.pageTests.PropertyDetailsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ClickOnViewProperty">
-                  </a> <!-- ClickOnViewProperty -->
-                  <span class="method-name">ClickOnViewProperty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -438,54 +469,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateAgentAddress')
+data.setCell(0, 1, 'ClickOnViewProperty')
 data.setCell(0, 2, 'com.zoopla.pageTests.PropertyDetailsPageTest')
-data.setCell(0, 3, 40058);
+data.setCell(0, 3, 40121);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickOnsearchBtn')
-data.setCell(1, 2, 'com.zoopla.pageTests.HomepageTest')
-data.setCell(1, 3, 3434);
+data.setCell(1, 1, 'validateAgentAddress')
+data.setCell(1, 2, 'com.zoopla.pageTests.PropertyDetailsPageTest')
+data.setCell(1, 3, 40046);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickOnProperty')
-data.setCell(2, 2, 'com.zoopla.pageTests.ListingsPageTest')
-data.setCell(2, 3, 3141);
+data.setCell(2, 1, 'clickOnsearchBtn')
+data.setCell(2, 2, 'com.zoopla.pageTests.HomepageTest')
+data.setCell(2, 3, 3775);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ClickOnViewProperty')
-data.setCell(3, 2, 'com.zoopla.pageTests.PropertyDetailsPageTest')
-data.setCell(3, 3, 2244);
+data.setCell(3, 1, 'clickOnProperty')
+data.setCell(3, 2, 'com.zoopla.pageTests.ListingsPageTest')
+data.setCell(3, 3, 2959);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'MostRecentDrpDwn')
 data.setCell(4, 2, 'com.zoopla.pageTests.ListingsPageTest')
-data.setCell(4, 3, 1860);
+data.setCell(4, 3, 296);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateAllListing')
-data.setCell(5, 2, 'com.zoopla.pageTests.AgentPageTest')
-data.setCell(5, 3, 1630);
+data.setCell(5, 1, 'EnterText')
+data.setCell(5, 2, 'com.zoopla.pageTests.HomepageTest')
+data.setCell(5, 3, 232);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'EnterText')
+data.setCell(6, 1, 'validateHomepageTitle')
 data.setCell(6, 2, 'com.zoopla.pageTests.HomepageTest')
-data.setCell(6, 3, 275);
+data.setCell(6, 3, 23);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'validateTitle')
 data.setCell(7, 2, 'com.zoopla.pageTests.ListingsPageTest')
-data.setCell(7, 3, 37);
+data.setCell(7, 3, 16);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validateAgentName')
-data.setCell(8, 2, 'com.zoopla.pageTests.AgentPageTest')
-data.setCell(8, 3, 33);
+data.setCell(8, 1, 'ValidatepageTitle')
+data.setCell(8, 2, 'com.zoopla.pageTests.PropertyDetailsPageTest')
+data.setCell(8, 3, 7);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'ValidatepageTitle')
-data.setCell(9, 2, 'com.zoopla.pageTests.PropertyDetailsPageTest')
-data.setCell(9, 3, 17);
+data.setCell(9, 1, 'validateAgentName')
+data.setCell(9, 2, 'com.zoopla.pageTests.AgentPageTest')
+data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'validateHomepageTitle')
-data.setCell(10, 2, 'com.zoopla.pageTests.HomepageTest')
-data.setCell(10, 3, 15);
+data.setCell(10, 1, 'validateAllListing')
+data.setCell(10, 2, 'com.zoopla.pageTests.AgentPageTest')
+data.setCell(10, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -518,92 +549,92 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateHomepageTitle</span>
-                <span class="method-start">6653 ms</span>
+                <span class="method-start">6322 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnterText</span>
-                <span class="method-start">6672 ms</span>
+                <span class="method-start">6351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnsearchBtn</span>
-                <span class="method-start">6949 ms</span>
+                <span class="method-start">6585 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10385 ms</span>
+                <span class="method-start">10361 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.zoopla.pageTests.ListingsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Initialize</span>
-                <span class="method-start">10553 ms</span>
+                <span class="method-start">10528 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateTitle</span>
-                <span class="method-start">17460 ms</span>
+                <span class="method-start">16954 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MostRecentDrpDwn</span>
-                <span class="method-start">17499 ms</span>
+                <span class="method-start">16971 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnProperty</span>
-                <span class="method-start">19361 ms</span>
+                <span class="method-start">17268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teatDown</span>
-                <span class="method-start">22504 ms</span>
+                <span class="method-start">20228 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.zoopla.pageTests.PropertyDetailsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Initialize</span>
-                <span class="method-start">22725 ms</span>
+                <span class="method-start">20440 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ValidatepageTitle</span>
-                <span class="method-start">31300 ms</span>
+                <span class="method-start">30412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ClickOnViewProperty</span>
-                <span class="method-start">31319 ms</span>
+                <span class="method-start">30421 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateAgentAddress</span>
-                <span class="method-start">33565 ms</span>
+                <span class="method-start">70545 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73626 ms</span>
+                <span class="method-start">110593 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.zoopla.pageTests.AgentPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">initialize</span>
-                <span class="method-start">73840 ms</span>
+                <span class="method-start">110788 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateAgentName</span>
-                <span class="method-start">84221 ms</span>
+                <span class="method-start">160553 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateAllListing</span>
-                <span class="method-start">84256 ms</span>
+                <span class="method-start">160557 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85888 ms</span>
+                <span class="method-start">160560 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
