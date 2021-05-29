@@ -1,4 +1,4 @@
-package Util;
+package com.zoopla.Util;
 
 
 import java.text.SimpleDateFormat;
@@ -19,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class CommonUtils {
 	
 		public static WebDriver driver;
-		public  ExtentTest logger;
+		public  ExtentTest test;
 		public static  ExtentReports report;
 		
 		public static void InitializeDriver() 
@@ -39,7 +39,7 @@ public class CommonUtils {
 		public static void CreateReport() {
 			String fileName = new SimpleDateFormat("'ZooplaReport_'YYYYMMddHHmm'.html'").format(new Date());
 			String path = "/Users/sayanna/work/bindu-work/Zoopla-POM/Zoopla-POM/Reports/ExtentReports"+ fileName;
-			report = new ExtentReports(path);
+			report = new ExtentReports(path,true);
 			
 		}
 		public static void CloseReport() {

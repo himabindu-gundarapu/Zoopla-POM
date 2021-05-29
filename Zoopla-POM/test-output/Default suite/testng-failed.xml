@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zoopla.pageTests.PropertyDetailsPageTest">
+      <class name="com.zoopla.pageTests.AgentPageTest">
         <methods>
-          <include name="Initialize"/>
+          <include name="validateAllListing"/>
           <include name="tearDown"/>
-          <include name="validateAgentAddress"/>
-          <include name="ValidatepageTitle"/>
+          <include name="closeReport"/>
+          <include name="createReport"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- com.zoopla.pageTests.PropertyDetailsPageTest -->
+      </class> <!-- com.zoopla.pageTests.AgentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,33 +21,40 @@ public class PropertyDetailsPageTest extends TestBase
 	public void Initialize() 
 	{
 		TestBase.setUp();
-		logger = report.startTest("PropertyDetailsPageTest");
-		HomePageObj = new HomePage(driver); 
+		test = report.startTest("PropertyDetailsPageTest");
+		HomePageObj = new HomePage(driver);
+		HomePageObj.preferencesClick();
 		HomePageObj.EntercityTextBox("London");
 		Listingpageobj = HomePageObj.ClicksearchButton();
 		SelectedPropertyAddress = Listingpageobj.AddressOfTheFifthProperty();
+		System.out.println("Selected property address :"+SelectedPropertyAddress);
 		PropertyPageObj = Listingpageobj.clickOnFifthListing();
 	}
 	
 	
-	 @Test(priority =1)
-	 public void ValidatepageTitle() {
-		 String actualUrl= PropertyPageObj.validateSelectedpropertypageURL();
-		 String expectedUrl = "https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12";
-		 logger.log(LogStatus.INFO,"PropertyDetailsPageUrl" +actualUrl);
-		 Assert.assertEquals(actualUrl,expectedUrl,"URL not matched");
-		 logger.log(LogStatus.INFO,"URL matched");
-		 }
-	 @Test(priority=2)
+//	 @Test(priority =1)
+//	 public void ValidatepageTitle() {
+//		 String actualUrl= PropertyPageObj.validateSelectedpropertypageURL();
+//		 String expectedUrl = "https://www.zoopla.co.uk/for-sale/details/58625425/?search_identifier=c14ac08bf282507f6273830c65fcde12";
+//		 logger.log(LogStatus.INFO,"PropertyDetailsPageUrl" +actualUrl);
+//		 Assert.assertEquals(actualUrl,expectedUrl,"URL not matched");
+//		 logger.log(LogStatus.INFO,"URL matched");
+//		 }
+	 @Test(priority=1)
 	 public void validateAgentAddress() {
 		String actualaddress = PropertyPageObj.validatePropertyAddress();
+		System.out.println("selectedProprty address"+ actualaddress);
 		String expectedAddress = SelectedPropertyAddress;
-		logger.log(LogStatus.INFO,"AgentAddress on selected property" +actualaddress);
+		test.log(LogStatus.INFO,"AgentAddress on selected property" +actualaddress);
 		 Assert.assertEquals(actualaddress,expectedAddress);
-		 logger.log(LogStatus.INFO,"AgentAddress on selected property verified");
+		 test.log(LogStatus.INFO,"AgentAddress on selected property verified");
+	 }
+//	 @Test(priority =2)
+	 public void GetAgentName() {
+		PropertyPageObj.AgentName();
 	 }
 	 
-	 @Test(priority=2)
+	 @Test(priority=3)
 	 public void ClickOnViewProperty() {
 		 PropertyPageObj.clickOnAgentname();
 	 }

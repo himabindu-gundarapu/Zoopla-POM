@@ -25,26 +25,26 @@ public class HomepageTest extends TestBase
 	@BeforeClass
 	public void Initialize() {
 		TestBase.setUp();
-		logger = report.startTest("HomePageTestCase");
+		test = report.startTest("HomePageTestCase");
 		HomepageObj = new HomePage(driver);
 		
 //		HomepageObj.preferencesClick();
 //		System.out.println("pop up clicked");
-		
+//		
 		
 	}
 	
-//	@Test(priority =1)
-//	public void ClickOnPopup() {
-//		HomepageObj.preferencesClick();
-//		System.out.println("pop up clicked");
-//	}
+	@Test(priority =1)
+	public void ClickOnPopup() {
+		HomepageObj.preferencesClick();
+		System.out.println("pop up clicked");
+	}
 	@Test(priority =1)
 	public void validateHomepageTitle() {
 		
 		String actualtitle = HomepageObj.verifyHomePageTitle();
 		System.out.println("actual homepage title :  "+actualtitle);
-		logger.log(LogStatus.INFO,"HomePageTitle" +actualtitle );
+		test.log(LogStatus.INFO,"HomePageTitle" +actualtitle );
 		String ExpectedTitle ="Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents";
 		Assert.assertEquals(actualtitle,ExpectedTitle,"Fail");
 	}

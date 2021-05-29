@@ -1,17 +1,14 @@
 package com.zoopla.pages;
 
 import java.util.List;
+import com.zoopla.Util.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import com.zoopla.TestBase;
-
-import Util.CommonUtils;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ListingPage extends TestBase {
 	

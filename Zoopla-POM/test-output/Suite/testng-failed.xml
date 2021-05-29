@@ -6,17 +6,28 @@
       <class name="com.zoopla.pageTests.PropertyDetailsPageTest">
         <methods>
           <include name="Initialize"/>
+          <include name="closeReport"/>
           <include name="tearDown"/>
           <include name="validateAgentAddress"/>
-          <include name="ValidatepageTitle"/>
-          <include name="ClickOnViewProperty"/>
+          <include name="createReport"/>
         </methods>
       </class> <!-- com.zoopla.pageTests.PropertyDetailsPageTest -->
+      <class name="com.zoopla.pageTests.ListingsPageTest">
+        <methods>
+          <include name="Initialize"/>
+          <include name="closeReport"/>
+          <include name="teatDown"/>
+          <include name="validateTitle"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- com.zoopla.pageTests.ListingsPageTest -->
       <class name="com.zoopla.pageTests.AgentPageTest">
         <methods>
           <include name="validateAllListing"/>
           <include name="tearDown"/>
           <include name="validateAgentName"/>
+          <include name="closeReport"/>
+          <include name="createReport"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- com.zoopla.pageTests.AgentPageTest -->
